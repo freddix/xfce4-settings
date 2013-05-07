@@ -2,14 +2,12 @@
 
 Summary:	Xfce settings
 Name:		xfce4-settings
-Version:	4.10.0
+Version:	4.10.1
 Release:	1
 License:	GPL v2, LGPL v2
 Group:		X11/Applications
 Source0:	http://archive.xfce.org/src/xfce/xfce4-settings/4.10/%{name}-%{version}.tar.bz2
-# Source0-md5:	cc4dd9179ead9046c056431f01a12000
-Patch0:		2ec636049b95d0c51286253813b5b1a074472afc.patch
-Patch1:		8032dd77047329a93edd4c4a8b686ffc36d2f7a7.patch
+# Source0-md5:	eaa86dd86ef0dad9cf7af1ee2c831972
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -40,8 +38,6 @@ Xfce desktop environment settings.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
 
 %build
 %{__glib_gettextize}
