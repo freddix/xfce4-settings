@@ -3,7 +3,7 @@
 Summary:	Xfce settings
 Name:		xfce4-settings
 Version:	4.11.3
-Release:	1
+Release:	2
 License:	GPL v2, LGPL v2
 Group:		X11/Applications
 Source0:	http://archive.xfce.org/src/xfce/xfce4-settings/4.11/%{name}-%{version}.tar.bz2
@@ -32,7 +32,7 @@ BuildRequires:	xfconf-devel
 Requires(post,postun):	/usr/bin/gtk-update-icon-cache
 Requires(post,postun):	hicolor-icon-theme
 Requires:	libxfce4kbd >= %{xfce_version}
-Requires:	xfconf >= %{xfce_version}
+Requires:	xfconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
